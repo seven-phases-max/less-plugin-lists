@@ -1,6 +1,6 @@
 {
   "name": "less-plugin-lists",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "lists/arrays manipulation functions for Less",
   "homepage": "https://github.com/seven-phases-max/less-plugin-lists",
   "author": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/seven-phases-max/less-plugin-lists.git"
+    "url": "git://github.com/seven-phases-max/less-plugin-lists.git"
   },
   "license": {
     "type": "MIT",

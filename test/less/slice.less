@@ -4,7 +4,7 @@ slice {
 
     00: _inspect(slice(@0,  3));
     01: _inspect(slice(@0,  0));
-    02: _inspect(slice(@0, -1));
+    // 02: _inspect(slice(@0, -1));
     03: _inspect(slice(@0,  2,  5));
     04: _inspect(slice(@0,  2,  0));
     05: _inspect(slice(@0,  2,  6));
@@ -12,4 +12,8 @@ slice {
     07: _inspect(slice(@0, -4, -2));
 
     10: _inspect(slice(@0));
+    
+    // Disabled [02] for now because it changes between Less 2.4.0 and 2.5.0 (`[e]` vs. `e`).
+    // This does not affect normally generated CSS but only visible with _inspect.
+    // (See related docs/impl-notes.md#slice-1)
 }
