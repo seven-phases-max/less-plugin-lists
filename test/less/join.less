@@ -1,0 +1,15 @@
+
+join {
+    @1: 1 2, 3 4;
+    @2: @1 @1, @1;
+
+    00: join(#123);
+    01: join(@1);
+    02: join(@1, "; ");
+    03: join(a b c d);
+    04: join(@2, " + ");
+
+    10: join(foo bar baz, ""); // yup, can be used as string concat
+
+    20: join((3 * 11px) of rgb(255, 0, 0), ' ');
+}

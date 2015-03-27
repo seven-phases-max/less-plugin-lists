@@ -1,0 +1,23 @@
+
+@0: a b c d e;
+
+splice-remove {
+    00: _inspect(splice(@0,  3));
+    01: _inspect(splice(@0,  0));
+    02: _inspect(splice(@0, -1));
+    03: _inspect(splice(@0,  3,  5));
+    04: _inspect(splice(@0,  3,  0));
+    05: _inspect(splice(@0,  3,  6));
+    06: _inspect(splice(@0,  3, -2));
+    07: _inspect(splice(@0, -3, -2));
+
+    10: _inspect(splice(@0));
+}
+
+splice-replace {
+    03: _inspect(splice(@0,  3,  5, x));
+    04: _inspect(splice(@0,  3,  0, x));
+    05: _inspect(splice(@0,  3,  6, x));
+    06: _inspect(splice(@0,  3, -2, x));
+    07: _inspect(splice(@0, -3, -2, x));
+}

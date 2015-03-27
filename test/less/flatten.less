@@ -1,0 +1,22 @@
+
+flatten {
+    @0: 1 2, 3 4, 5 6;
+    @1: a, b c, d, e;
+    @3: @f 1, @0 #123;
+
+    @a:     a;
+    @b: @a, b;
+    @c: @b, c;
+    @d: @c, d;
+    @e: @d, e;
+    @f: @e, f;
+
+    00: _inspect(flatten(@f));
+    01: _inspect(flatten(@f, comma));
+    02: _inspect(flatten(@f, "space"));
+    03: _inspect(flatten(@f, ','));
+    04: _inspect(flatten(@f, ~" "));
+    // 05: inspect_(flatten(@f #456, foo));
+
+    10: _inspect(flatten(@3, e(" ")));
+}

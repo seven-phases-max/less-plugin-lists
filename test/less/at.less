@@ -1,0 +1,22 @@
+
+@1: banana apple, tomato potato;
+@2: 2 white, 4 black;
+
+at {
+    00: at(banana, 1);
+    01: at(banana apple peach, 2);
+    02: at(banana apple peach, banana);
+    03: at(@1, 2);
+    04: at(@1, banana);
+
+    10: at(@2, 2);
+    11: at(@2, ~'2');
+    12: at(@2, 2px);
+}
+
+at {
+    .drill(a b c d, 1 2 3; foo, bar bingo baz; remanent magnetization);
+    .drill(@list...) {
+        drill: at(at(at(@list, 2), 2), 2);
+    }
+}

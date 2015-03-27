@@ -1,0 +1,18 @@
+splice-remove {
+  00: [a b d e];
+  01: [a b c d e];
+  02: [a b c d];
+  03: [a b e];
+  04: [a b];
+  05: [a b];
+  06: [a b d e];
+  07: [a b d e];
+  10: [b c d e];
+}
+splice-replace {
+  03: [a b x e];
+  04: [a b x];
+  05: [a b x];
+  06: [a b x d e];
+  07: [a b x d e];
+}

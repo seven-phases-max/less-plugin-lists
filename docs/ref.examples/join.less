@@ -1,0 +1,11 @@
+
+join {
+    @list: 1, 2, 3, 4;
+
+    01: join(@list);           // 1, 2, 3, 4
+    02: join(@list, -);        // 1-2-3-4
+    03: join(foo bar baz);     // foo, bar, baz
+    04: join(foo bar baz, ""); // foobarbaz
+
+    05: join((3 * 11px) of rgb(255, 0, 0), ' '); // 33px of #ff0000
+}

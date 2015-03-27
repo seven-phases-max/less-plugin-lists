@@ -1,0 +1,10 @@
+
+inspect {
+    @0: 1, 2, 3;
+    @1: a b c 0px red, foo #123 @0;
+    @2: 1, 2, , 4; // unfortunately this one is actually a single Anonymous value and not an array :(
+
+    0: @1;
+    1: _inspect(@1);
+    // 2: _inspect(@2);
+}

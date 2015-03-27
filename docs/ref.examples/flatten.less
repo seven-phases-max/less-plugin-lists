@@ -1,0 +1,9 @@
+
+flatten {
+    @list: a b, c d;           // two-dimensional list
+
+    0: length(@list);          // 2
+    1: length(flatten(@list)); // 4
+    2: flatten(@list);         // a, b, c, d
+    3: flatten(@list, space);  // a b c d
+}

@@ -1,0 +1,17 @@
+
+inspect {
+    @a: 1 2 3, 4 5 6;
+
+    00: _inspect(@a);
+    01: _inspect(transpose(@a));
+    02: _inspect(@a 7);
+    03: _inspect(cat(@a, 7));
+
+    @b1:     1;
+    @b2: @b1 2;
+    @b3: @b2 3;
+    @b:  @b3 4;
+
+    10: _inspect(@b);
+    11: _inspect(flatten(@b));
+}

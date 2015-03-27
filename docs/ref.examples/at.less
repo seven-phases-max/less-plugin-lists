@@ -1,0 +1,18 @@
+
+at {
+
+    @list: apple, banana, cherry;
+
+    00: at(@list, 2);       // banana
+    01: at(foo bar baz, 3); // baz
+    02: at(alone, 1);       // alone
+
+    @key-value-list:
+         Alice 10px,
+         Bob   20px,
+         Chuck 30px and his hat,
+         Dave  40px;
+
+    10: at(@key-value-list, Bob);   // 20px
+    11: at(@key-value-list, Chuck); // 30px and his hat
+}

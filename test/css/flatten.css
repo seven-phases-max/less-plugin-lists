@@ -1,0 +1,8 @@
+flatten {
+  00: [a, b, c, d, e, f];
+  01: [a, b, c, d, e, f];
+  02: [a b c d e f];
+  03: [a, b, c, d, e, f];
+  04: [a b c d e f];
+  10: [a b c d e f 1 1 2 3 4 5 6 #112233];
+}

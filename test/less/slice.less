@@ -1,0 +1,15 @@
+
+slice {
+    @0: a b c d e;
+
+    00: _inspect(slice(@0,  3));
+    01: _inspect(slice(@0,  0));
+    02: _inspect(slice(@0, -1));
+    03: _inspect(slice(@0,  2,  5));
+    04: _inspect(slice(@0,  2,  0));
+    05: _inspect(slice(@0,  2,  6));
+    06: _inspect(slice(@0,  2, -2));
+    07: _inspect(slice(@0, -4, -2));
+
+    10: _inspect(slice(@0));
+}

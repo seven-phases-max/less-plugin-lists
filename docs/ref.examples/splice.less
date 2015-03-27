@@ -1,0 +1,9 @@
+
+splice {
+    @list: one, two, three, four;
+
+    00: splice(@list, 3);         // one, two, four
+    01: splice(@list, 2, 4);      // one, four
+    02: splice(@list, -3, -2);    // one, three, four
+    01: splice(@list, 3, 4, hat); // one, two, hat, four
+}

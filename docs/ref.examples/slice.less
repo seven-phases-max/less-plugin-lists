@@ -1,0 +1,10 @@
+
+slice {
+    @list: one, two, three, four;
+
+    00: slice(@list,  3);     // three, four
+    01: slice(@list,  2,  3); // two
+    02: slice(@list, -3);     // two, three, four
+    03: slice(@list,  3, -1); // three
+    04: slice(@list, -2,  0); // three, four
+}

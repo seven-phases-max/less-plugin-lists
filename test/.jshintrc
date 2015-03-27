@@ -1,0 +1,13 @@
+{
+    "futurehostile": true,
+
+    "latedef":  true,
+    "node":     true,
+    "undef":    true,
+    "unused":   true,
+    "noarg":    true,
+    "eqnull":   true,
+    "forin":    true,
+
+    "laxbreak": true
+}

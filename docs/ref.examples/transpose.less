@@ -1,0 +1,14 @@
+
+transpose {
+
+    @list: Alice 1,
+           Bob   2,
+           Carol 3,
+           Dave  4,
+           Eve   5;
+
+    00: transpose(@list);
+    01: at(transpose(@list), 1);
+    02: at(transpose(@list), 2);
+    03: transpose(cat(a, b, c) cat(1, 2, 3));
+}
