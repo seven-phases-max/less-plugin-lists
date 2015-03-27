@@ -1,7 +1,7 @@
 {
   "name": "less-plugin-lists",
   "version": "0.1.0",
-  "description": "list/array manipulation functions for Less",
+  "description": "lists/arrays manipulation functions for Less",
   "homepage": "https://github.com/seven-phases-max/less-plugin-lists",
   "author": {
     "name": "Max Mikhailov"

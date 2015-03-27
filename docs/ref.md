@@ -1,5 +1,5 @@
 
-### Functions
+### Function Reference
 
 - [`at       `](#at)        - returns the value at the specified position in a list.
 - [`cat      `](#cat)       - concatenates two or more lists.
@@ -313,7 +313,7 @@ _inspect(list, prefix, postfix)
 
 **Remarks**
 
-   This functions is used for the plugin self-tests.
+   This function is used for the plugin self-tests.
 
 **Example**
 ```less

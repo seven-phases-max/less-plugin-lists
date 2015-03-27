@@ -3,7 +3,7 @@
 ### `at [1]`
 
 Any one-dim list can be considered as a single item of 2-dim key-value list so that:<br>
-`at-key(banana apple, banana);` -> `apple`
+`at(banana apple, banana);` -> `apple`
 
 This leads to some ambiguity though, e.g.:<br>
 `[banana, [peach, apple]]` - is banana here a key for `empty` value or for `[peach, apple]`?
