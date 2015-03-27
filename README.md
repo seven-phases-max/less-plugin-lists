@@ -1,3 +1,7 @@
+[![npm version](https://badge.fury.io/js/less-plugin-lists.svg)](http://badge.fury.io/js/less-plugin-lists)
+[![dependencies](https://david-dm.org/seven-phases-max/less-plugin-lists.svg)](https://david-dm.org/seven-phases-max/less-plugin-lists)
+[![dev dependencies](https://david-dm.org/seven-phases-max/less-plugin-lists/dev-status.svg)](https://david-dm.org/seven-phases-max/less-plugin-lists#info=devDependencies)
+
 # less-plugin-lists
 
 Lists/arrays manipulation functions for [Less](http://lesscss.org).
@@ -17,7 +21,7 @@ in the [Less documentation](http://lesscss.org).
 ## Using with common Less tools
 
 - [`grunt-contrib-less`](https://github.com/gruntjs/grunt-contrib-less#usage-examples)
-- [`gulp-less`] (https://github.com/plus3network/gulp-less#using-plugins)
+- [`gulp-less`](https://github.com/plus3network/gulp-less#using-plugins)
 
 ## Programmatic Usage
 
