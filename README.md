@@ -34,6 +34,7 @@ See [Using a plugin in code](http://lesscss.org/usage/#plugins-using-a-plugin-in
 - [`cat      `](docs/ref.md#cat)       - concatenates two or more lists.
 - [`flatten  `](docs/ref.md#flatten)   - returns a one-dimensional list containing all elements of an input list.
 - [`join     `](docs/ref.md#join)      - joins all elements of a list into a string.
+- [`l        `](docs/ref.md#l)         - creates a comma-separated list.
 - [`slice    `](docs/ref.md#slice)     - returns selected portion of a list.
 - [`splice   `](docs/ref.md#splice)    - replaces or removes selected portion of a list and returns the modified copy.
 - [`transpose`](docs/ref.md#transpose) - transposes rows and columns of a list.

@@ -5,8 +5,9 @@
 - [`cat      `](#cat)       - concatenates two or more lists.
 - [`flatten  `](#flatten)   - returns a one-dimensional list containing all elements of an input list.
 - [`join     `](#join)      - joins all elements of a list into a string.
+- [`l        `](#l)         - creates a comma-separated list.
 - [`slice    `](#slice)     - returns selected portion of a list.
-- [`splice   `](#splice)    - replaces or removes selected portion of a list and returns the modified copy.
+- [`splice   `](#splice)    - replaces or removes selected portion of a list.
 - [`transpose`](#transpose) - transposes rows and columns of a list.
 - [`_inspect `](#_inspect)  - return a string representation of a list with debug/log formatting.
 
@@ -114,7 +115,7 @@ flatten(list, delimiter)
     </dd></dl>
 `delimiter` <dl><dd>
     Optional. Specifies a delimiter to be used for the resulting list.<br>
-    This parameter can be one of: `comma`, `space`, `","`, `" "`. 
+    This parameter can be one of: `comma`, `space`, `","`, `" "`.
     If omitted, the resulting list is comma-delimited.
     </dd></dl>
 
@@ -169,6 +170,39 @@ join((3 * 11px) of rgb(255, 0, 0), ' '); // 33px of #ff0000
 
 ---------------------------------------------------------------
 
+### `l`
+
+   Creates a comma-separated list.
+
+**Syntax**
+```
+l(value1, value2, ... valueN)
+```
+
+**Parameters** <dl></dl>
+`value1, ..., valueN` <dl><dd>
+    Required (two arguments minimum). The list values.
+    </dd></dl>
+
+**Returns**
+
+   List.
+
+**Remarks** <dl><dd>
+    The purpose of this function is to construct a comma-separated list in place, so it can be passed as a single function or mixing argument.
+
+    Function identifiers are not case-sensitive in Less, so `L` identifier is also valid to use.
+    </dd></dl>
+
+**Example**
+```less
+at(a  b  c, 2);    // b
+at(a, b, c, 2);    // at(a, b, c, 2)
+at(l(a, b, c), 2); // b
+```
+
+---------------------------------------------------------------
+
 ### `slice`
 
    Returns selected portion of a list.
@@ -212,7 +246,7 @@ slice(@list, -2,  0); // three, four
 
 ### `splice`
 
-   Replaces or removes selected portion of a list and returns the modified copy.
+   Replaces or removes selected portion of a list.
 
 **Syntax**
 ```
@@ -238,7 +272,7 @@ splice(list, start, end, value)
 
 **Returns**
 
-   The modified copy of the input list.
+   Modified list.
 
 **Example**
 ```less
@@ -286,7 +320,7 @@ transpose(@list);        // Alice, Bob, Carol, Dave, Eve 1, 2, 3, 4, 5
 at(transpose(@list), 1); // Alice, Bob, Carol, Dave, Eve
 at(transpose(@list), 2); // 1, 2, 3, 4, 5
 
-transpose(cat(a, b, c) cat(1, 2, 3)); // a, 1, b, 2, c, 3
+transpose(l(a, b, c) l(1, 2, 3)); // a 1, b 2, c 3
 ```
 
 ---------------------------------------------------------------

@@ -1,0 +1,10 @@
+
+l {
+    00: _inspect(l(1, 2, 3));
+    01: _inspect(l(1, 2  3));
+    02: _inspect(l(1, l(2, 3)));
+    
+    // two arguments minimum, otherwise fallback to CSS function:
+    10: _inspect(l());
+    11: _inspect(l(1));
+}
