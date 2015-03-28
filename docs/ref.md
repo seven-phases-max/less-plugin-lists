@@ -188,11 +188,9 @@ l(value1, value2, ... valueN)
 
    List.
 
-**Remarks** <dl><dd>
-    The purpose of this function is to construct a comma-separated list in place, so it can be passed as a single function or mixing argument.
-
-    Function identifiers are not case-sensitive in Less, so `L` identifier is also valid to use.
-    </dd></dl>
+**Remarks**
+- The purpose of this function is to construct a comma-separated list in place so that it can be passed as a single function or mixing argument.
+- Function identifiers are not case-sensitive in Less, so `L` identifier is also valid to use.
 
 **Example**
 ```less
