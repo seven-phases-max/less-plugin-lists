@@ -30,11 +30,11 @@ See [Using a plugin in code](http://lesscss.org/usage/#plugins-using-a-plugin-in
 ## Function Reference
 
 `less-plugin-lists` extends Less with the following functions:
-- [`at       `](docs/ref.md#at)        - returns the value at the specified position in a list.
-- [`cat      `](docs/ref.md#cat)       - concatenates two or more lists.
-- [`flatten  `](docs/ref.md#flatten)   - returns a one-dimensional list containing all elements of an input list.
-- [`join     `](docs/ref.md#join)      - joins all elements of a list into a string.
-- [`slice    `](docs/ref.md#slice)     - returns selected portion of a list.
-- [`splice   `](docs/ref.md#splice)    - replaces or removes selected portion of a list and returns the modified copy.
+- [`atÂ Â Â Â Â Â Â `](docs/ref.md#at)        - returns the value at the specified position in a list.
+- [`catÂ Â Â Â Â Â `](docs/ref.md#cat)       - concatenates two or more lists.
+- [`flattenÂ Â `](docs/ref.md#flatten)   - returns a one-dimensional list containing all elements of an input list.
+- [`joinÂ Â Â Â Â `](docs/ref.md#join)      - joins all elements of a list into a string.
+- [`sliceÂ Â Â Â `](docs/ref.md#slice)     - returns selected portion of a list.
+- [`spliceÂ Â Â `](docs/ref.md#splice)    - replaces or removes selected portion of a list and returns the modified copy.
 - [`transpose`](docs/ref.md#transpose) - transposes rows and columns of a list.
-- [`_inspect `](docs/ref.md#_inspect)  - return a string representation of a list with debug/log formatting.
+- [`_inspectÂ `](docs/ref.md#_inspect)  - return a string representation of a list with debug/log formatting.
