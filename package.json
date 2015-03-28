@@ -1,7 +1,7 @@
 {
   "name": "less-plugin-lists",
   "version": "0.1.1",
-  "description": "lists/arrays manipulation functions for Less",
+  "description": "list/array manipulation functions for Less",
   "homepage": "https://github.com/seven-phases-max/less-plugin-lists",
   "author": {
     "name": "Max Mikhailov"
@@ -26,5 +26,16 @@
     "grunt-contrib-less": "^1.0.0",
     "jit-grunt": "^0.9.1",
     "time-grunt": "^1.1.0"
-  }
+  },
+  "keywords": [
+    "less",
+    "less.js",
+    "lesscss",
+    "less plugin",
+    "less functions",
+    "less list",
+    "less array",
+    "less key value",
+    "less map"
+  ]
 }
