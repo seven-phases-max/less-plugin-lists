@@ -74,6 +74,10 @@ cat(value1, value2, ... valueN)
 
    List.
 
+**Remarks** <dl><dd>
+    The type of the returning list (i.e. if it's comma or whitespace separated) is determined by the type of the first list among arguments. If no lists passed in, the result is comma delimited.
+    </dd></dl>
+
 **Example**
 ```less
 @a: 1, 2;
