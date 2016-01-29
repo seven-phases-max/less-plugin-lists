@@ -15,8 +15,8 @@ module.exports = function (grunt) { return function() {
             return false;
         }
 
-        var left  = grunt.file.read(src),
-            right = grunt.file.read(dst);
+        var left  = grunt.file.read(dst),
+            right = grunt.file.read(src);
         if (left === right) {
             grunt.log.ok((src + " - ok").green);
             return true;

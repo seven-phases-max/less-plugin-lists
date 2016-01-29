@@ -1,4 +1,4 @@
 inspect {
-  0: a b c 0px red, foo #112233 1, 2, 3;
-  1: [[a b c 0px red], [foo #112233 [1, 2, 3]]];
+  0: a b c 0px red, foo #123 1, 2, 3;
+  1: [[a b c 0px red], [foo #123 [1, 2, 3]]];
 }
