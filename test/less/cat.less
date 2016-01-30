@@ -18,14 +18,10 @@ cat {
 
     40: _inspect(cat(1));
     41: _inspect(cat(1, @empty));
-    // 42: _inspect(cat(1, @empty-list));
+    42: _inspect(cat(1, @empty-list));
     43: _inspect(cat(@empty));
     44: _inspect(cat(@empty-list));
     45: _inspect(cat());
-
-    // Disabled [42] for now because it changes between Less 2.4.0 and 2.5.0 (`[1]` vs. `1`).
-    // This does not affect normally generated CSS but only visible with _inspect.
-    // (See related docs/impl-notes.md#slice-1)
 }
 
 @empty: ;
