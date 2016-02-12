@@ -1,0 +1,26 @@
+
+vector-arithm {
+    @a: 1  2;
+    @b: 3, 4;
+    @c: 1 2, 3 4;
+    
+    00:  1 *  2;
+    01: @a *  2;   
+    02:  2 * @a; 
+    03: @a * @a;  
+    04: @a * @a + 3; 
+    05: @a * @b;
+    06: @b /  2;
+    07: @b * @a;
+    08: (@a * @b + @b) / @a;
+    
+    10: @c + 3;
+    11: @c - @a;
+    12: @c / @b;
+    13: @a * -@c + @b * 2;
+    
+    20: l(1 red 3rem, 4em 5, length(1 2 3 4 5 6))
+      + l(11, 10s #987654, 3 2 1px);
+    21: sqrt((1/2))
+      * l(cornflowerblue, palegoldenrod, lightgoldenrodyellow / @c);
+}
