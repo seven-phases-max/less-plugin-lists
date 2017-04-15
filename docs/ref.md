@@ -172,7 +172,7 @@ join((3 * 11px) of rgb(255, 0, 0), ' '); // 33px of #ff0000
 
 ### `l`
 
-   Creates a comma-separated list.
+   Creates a comma or space separated list.
 
 **Syntax**
 ```
@@ -181,7 +181,7 @@ l(value1, value2, ... valueN)
 
 **Parameters** <dl></dl>
 `value1, ..., valueN` <dl><dd>
-    Required (two arguments minimum). The list values.
+    Required. The list value(s).
     </dd></dl>
 
 **Returns**
@@ -189,7 +189,8 @@ l(value1, value2, ... valueN)
    List.
 
 **Remarks**
-- The purpose of this function is to construct a comma-separated list in place so that it can be passed as a single function or mixing argument.
+- The purpose of this function is to construct a comma-separated list in place so that it can be passed as a single function or mixing argument
+- As well as using both comma or space separated list "literals" directly in [complex statements](va.md#list-literals).
 - Function identifiers are not case-sensitive in Less, so `L` identifier is also valid to use.
 
 **Example**
