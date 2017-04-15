@@ -9,8 +9,7 @@ va {
     ab:  @a + @b;
     ba:  @b + @a;
     1ba: 1 + @b + @a;
-    
-    // TODO allow l() with one argument (don't fallback!)
-    // d: l(1 2 3) * 42;   // OK
-    e: l(1, 2, 3) * 42; // OK
+
+    d: l(1 2 3) * 42;
+    e: l(1, 2, 3) * 42;
 }
