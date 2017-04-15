@@ -1,4 +1,10 @@
 
+# 1.0.0
+
+2017-15-04
+ - `l` function call with a single argument no longer falls back to a CSS function and returns the passed value instead
+ - Enable [vector arithmetic](docs/va.md)
+
 # 0.1.2
 
 2015-03-28
