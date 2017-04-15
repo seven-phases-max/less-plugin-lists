@@ -42,4 +42,4 @@ See [Using a plugin in code](http://lesscss.org/usage/#plugins-using-a-plugin-in
 
 ## Additional features
 
-* Vector Arithmetic - perform arithmetic operations on lists
+* [Vector Arithmetic](docs/va.md) - perform arithmetic operations on lists
