@@ -1,7 +1,7 @@
 
-## Vector Arithmetics
+## Vector Arithmetic
 
-"Vector Arithmetics" enables support for performing [arithmetic operations](http://lesscss.org/features/#features-overview-feature-operations) on lists:
+"Vector Arithmetic" enables support for performing element-wise [arithmetic operations](http://lesscss.org/features/#features-overview-feature-operations) on lists:
 ```less
 @abstract-margin: 1 2 3 4;
 margin: @abstract-margin * 2px; // 2px 4px 6px 8px
