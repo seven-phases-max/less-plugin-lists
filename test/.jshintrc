@@ -1,5 +1,6 @@
 {
     "futurehostile": true,
+    "esversion":     5,
 
     "node":     true,
     "undef":    true,
@@ -7,6 +8,7 @@
     "noarg":    true,
     "eqnull":   true,
     "forin":    true,
+    "eqeqeq":   true,
 
     "laxbreak": true
 }
