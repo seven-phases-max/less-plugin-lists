@@ -211,7 +211,7 @@ at(l(a, b, c), 2); // b
 slice(list, start, end)
 ```
 
-**Parameters**
+**Parameters** <dl></dl>
 `list` <dl><dd>
     Required. The input list.
     </dd></dl>

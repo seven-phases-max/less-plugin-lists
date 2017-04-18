@@ -8,7 +8,7 @@ margin: @abstract-margin * 2px; // 2px 4px 6px 8px
 ```
 
 ### Comma vs. Space
-Both comma and space separated list are supported. When both list types are used in a single expression, the result inherits the delimiter of the leftmost list operand, e.g.:
+Both comma and space separated list are supported. When both list types are used in a single expression, its result inherits the delimiter of the leftmost list operand, e.g.:
 ```less
 @a: 10 20;
 @b:  1, 2;
