@@ -1,4 +1,6 @@
 
+<img src="docs/logo.svg" width="100%" height="48"/>
+
 # less-plugin-lists
 
 [![npm version](https://badge.fury.io/js/less-plugin-lists.svg)](http://badge.fury.io/js/less-plugin-lists)
