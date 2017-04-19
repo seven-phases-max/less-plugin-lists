@@ -1,13 +1,11 @@
-
-<img src="docs/logo.svg" width="100%" height="48"/>
+<img src="https://cdn.rawgit.com/seven-phases-max/less-plugin-lists/dev/docs/logo.svg" width="100%" height="48"/>
 
 # less-plugin-lists
+[Less](http://lesscss.org) plugin for lists/arrays manipulation.
 
 [![npm version](https://badge.fury.io/js/less-plugin-lists.svg)](http://badge.fury.io/js/less-plugin-lists)
 [![dependencies](https://david-dm.org/seven-phases-max/less-plugin-lists.svg)](https://david-dm.org/seven-phases-max/less-plugin-lists)
 [![dev dependencies](https://david-dm.org/seven-phases-max/less-plugin-lists/dev-status.svg)](https://david-dm.org/seven-phases-max/less-plugin-lists#info=devDependencies)
-
-[Less](http://lesscss.org) plugin for lists/arrays manipulation.
 
 ## Features
 
