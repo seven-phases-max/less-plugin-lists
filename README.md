@@ -1,31 +1,11 @@
+
+# less-plugin-lists
+
 [![npm version](https://badge.fury.io/js/less-plugin-lists.svg)](http://badge.fury.io/js/less-plugin-lists)
 [![dependencies](https://david-dm.org/seven-phases-max/less-plugin-lists.svg)](https://david-dm.org/seven-phases-max/less-plugin-lists)
 [![dev dependencies](https://david-dm.org/seven-phases-max/less-plugin-lists/dev-status.svg)](https://david-dm.org/seven-phases-max/less-plugin-lists#info=devDependencies)
 
-# less-plugin-lists
-
-> List/Array manipulation for [Less](http://lesscss.org).
-
-[**Developer / Contributor**](#font-patcher)
-  * [**Font Patcher**](#font-patcher)
-  * [**Gotta Patch 'em All Font Patcher!**](#gotta-patch-em-all)
-  * [**Other Good Fonts to Patch**](#other-good-fonts-to-patch)
-  * [**Contributing**](#contributing)
-  
-  * [****]()
-  
-[**Features**](#features)
-    * [**`.for` and `.for-each` Statements**](#features)
-    * [**Vector Arithmetic**](#features)
-[**Functions**](#functions)
-[**Installation**](#installation)
-[**Usage**](#using-with-lessc)
-    * [**Using with `lessc`**](#using-with-lessc)
-    * [**Using with common Less tools**](#using-with-common-less-tools)
-    * [**Programmatic Usage**](#programmatic-usage)
-[**Changelog**](CHANGELOG.md)
-
----
+List/Array manipulation for [Less](http://lesscss.org).
 
 ## Features
 
@@ -65,5 +45,3 @@ in the [Less documentation](http://lesscss.org).
 ## Programmatic Usage
 
 See [Using a plugin in code](http://lesscss.org/usage/#plugins-using-a-plugin-in-code).
-
-
