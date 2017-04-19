@@ -42,4 +42,5 @@ See [Using a plugin in code](http://lesscss.org/usage/#plugins-using-a-plugin-in
 
 ## Additional features
 
-* [Vector Arithmetic](docs/va.md) - perform arithmetic operations on lists
+* **[.for](docs/for.md) and [.for-each](docs/for-each.md)** - (almost) canonical syntax for iterative statements
+* **[Vector Arithmetic](docs/va.md)** - perform arithmetic operations on lists

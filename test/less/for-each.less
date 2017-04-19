@@ -1,0 +1,58 @@
+
+@fruit: banana, apple, pear, potato, carrot, peach;
+@2d-list: a b c, e f g;
+
+#for-each-fruit {
+    .for-each(@value in @fruit) {
+        value: @value;
+    }
+}
+
+#for-each-index-fruit {
+    .for-each(@value, @index in @fruit) {
+        @{index}: @value;
+    }
+}
+
+#for-each-nested {
+    .for-each(@x in @2d-list) {
+        .for-each(@y in @x) { 
+            r: @y of _inspect(@x);
+        }
+    }
+}
+
+#for-each-nested-index {
+    .for-each(@x, @i in @2d-list) {
+        .for-each(@y, @j in @x) {
+            @p:   @i * 10 + @j;
+            @{p}: @y;
+        }
+    }
+}
+
+#for-each-nested-scope {
+    .for-each(@x, @i in @2d-list) {
+        outer-@{i}: outer @x;
+        .for-each(@x, @i in @x) {
+            inner-@{i}: inner @x;
+        }
+    }
+}
+
+#for-each-nested-lazy-eval {
+    .for-each(@x, @i in @2d-list) {
+        outer-@{i}: @lazy;
+        .for-each(@x, @j in @x) {
+            inner-@{j}: @x ~'=' @lazy;
+        }
+        @lazy: @x;
+    }
+}
+
+.for-each {
+    me: is not a loop;
+    .for-each {
+        me: is not a loop too;
+    }
+}

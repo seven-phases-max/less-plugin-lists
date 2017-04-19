@@ -1,0 +1,58 @@
+#for-each-fruit {
+  value: banana;
+  value: apple;
+  value: pear;
+  value: potato;
+  value: carrot;
+  value: peach;
+}
+#for-each-index-fruit {
+  1: banana;
+  2: apple;
+  3: pear;
+  4: potato;
+  5: carrot;
+  6: peach;
+}
+#for-each-nested {
+  r: a of [a b c];
+  r: b of [a b c];
+  r: c of [a b c];
+  r: e of [e f g];
+  r: f of [e f g];
+  r: g of [e f g];
+}
+#for-each-nested-index {
+  11: a;
+  12: b;
+  13: c;
+  21: e;
+  22: f;
+  23: g;
+}
+#for-each-nested-scope {
+  outer-1: outer a b c;
+  inner-1: inner a;
+  inner-2: inner b;
+  inner-3: inner c;
+  outer-2: outer e f g;
+  inner-1: inner e;
+  inner-2: inner f;
+  inner-3: inner g;
+}
+#for-each-nested-lazy-eval {
+  outer-1: a b c;
+  inner-1: a = a;
+  inner-2: b = b;
+  inner-3: c = c;
+  outer-2: e f g;
+  inner-1: e = e;
+  inner-2: f = f;
+  inner-3: g = g;
+}
+.for-each {
+  me: is not a loop;
+}
+.for-each .for-each {
+  me: is not a loop too;
+}
