@@ -1,5 +1,5 @@
 <a href="#less-plugin-lists">
-    <img src="https://cdn.rawgit.com/seven-phases-max/less-plugin-lists/dev/docs/logo.svg" width="100%" height="48"/>
+    <img src="https://cdn.rawgit.com/seven-phases-max/less-plugin-lists/1d76ab1b/docs/logo.svg" width="100%" height="48"/>
 </a>
 
 # less-plugin-lists
