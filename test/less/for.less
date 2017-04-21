@@ -1,0 +1,71 @@
+
+.for-syntax {
+    .for(@i: 1, @n: 2)  {}
+    .for(@i: @x, @n: 4) {}
+    .for(@i: 5, 6)      {}
+    .for(@i, @n: 7)     {}
+    .for(@i, @n: @y)    {} // note @n is required here even if unused (todo?)
+    .for(@i, 9)         {} // the shortest form
+    
+    @x: 3;
+    @y: 8;
+}
+
+.for-basic-1 {
+    .for(@i, @n: 4) {r: @i of @n}
+}
+
+.for-basic-2 {
+    .for(@i:  1,  4) {a+_: @i}
+    .for(@i: -1, -4) {b+_: @i}
+}
+
+#for-nested {
+    .for(@i, 3) {
+        .for(@j, 3) {
+            r+_: @i * 10 + @j;
+        }
+    }
+}
+
+#for-list {
+    @fruit: banana, apple, pear, potato, carrot, peach;
+    .for(@i, @n: length(@fruit)) {
+        a+_: at(@fruit, @i);
+    }
+}
+
+.for-guards {
+    .for(@i, 5) when (@i < 3) {a+_: @i}
+    .for(@i, 5) when (@i = 3) {b+_: @i}
+    .for(@i, 5) when (@i > 3) {c+_: @i}
+    .for(@i, 5) when (isnumber(@i)) {d+_: @i}
+}
+
+.for-non-integer {
+    .for(@i:  1.2,  5.6) {a+_: @i}
+    .for(@i:  1.6,  5.2) {b+_: @i}
+    .for(@i: -1.2, -5.6) {c+_: @i}
+    .for(@i: -1.6, -5.2) {d+_: @i}
+}
+
+#for-lazy-eval {
+    @x: @j;
+    .for(@i, @n: 3) {
+        @y: @m;
+        .for(@j: -1, @m: -3) {
+            @{i}@{j}: @x @y @z;
+        }
+    }
+    @z: 42;
+    // these two are required currently because of #2543:
+    @j: unused;
+    @m: unused;
+}
+
+.for {
+    me: is not a loop;
+    .for {
+        me: is not a loop too;
+    }
+}

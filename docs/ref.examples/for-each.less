@@ -1,0 +1,49 @@
+
+// ............................................
+// Intro:
+
+@fruit: banana, apple, pear, potato, carrot, peach;
+
+#fruit {
+    .for-each(@value in @fruit) {
+        some: @value;
+    }
+}
+
+// ............................................
+// Generate classes from color map:
+
+@badge-colors: 
+    blue  #44BBFF,
+    gray  #F0F1F5,
+    green #66CC99,
+    red   #FC575E;
+
+.for-each(@pair in @badge-colors) {
+    @key: at(@pair, 1);
+    .badge-@{key} {
+        color: at(@pair, 2);
+    }
+}
+
+// ............................................
+// Generate icon classes from filename list:
+
+.icon {
+    .for-each(@name in @l: home cancel error book) {
+        &-@{name} {background-image: url("../images/@{name}.svg")}
+    }
+}
+
+// ............................................
+// Split a complex list:
+
+div {
+    @list: a b c, d e f, g h i;
+
+    .for-each(@x, @i in @list) {
+        .for-each(@y in @x) {
+            @{i}+: @y;
+        }
+    }
+}

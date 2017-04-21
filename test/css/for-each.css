@@ -50,6 +50,11 @@
   inner-2: f = f;
   inner-3: g = g;
 }
+.for-each-guard {
+  a: 2 4;
+  b: a b c d;
+  c: 1 2 3 4;
+}
 .for-each {
   me: is not a loop;
 }

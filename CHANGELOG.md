@@ -1,4 +1,9 @@
 
+# 1.1.0
+
+2017-22-04
+ - [`.for` and `.for-each`](README.md#features) statements
+ 
 # 1.0.0
 
 2017-15-04

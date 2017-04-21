@@ -1,4 +1,6 @@
-<img src="https://cdn.rawgit.com/seven-phases-max/less-plugin-lists/dev/docs/logo.svg" width="100%" height="48"/>
+<a href="#less-plugin-lists">
+    <img src="https://cdn.rawgit.com/seven-phases-max/less-plugin-lists/dev/docs/logo.svg" width="100%" height="48"/>
+</a>
 
 # less-plugin-lists
 [Less](http://lesscss.org) plugin for lists/arrays manipulation.
@@ -41,6 +43,7 @@ in the [Less documentation](http://lesscss.org).
 
 - [`grunt-contrib-less`](https://github.com/gruntjs/grunt-contrib-less#usage-examples)
 - [`gulp-less`](https://github.com/plus3network/gulp-less#using-plugins)
+- [`webpack less-loader`](https://webpack.js.org/loaders/less-loader/#plugins)
 
 ## Programmatic Usage
 

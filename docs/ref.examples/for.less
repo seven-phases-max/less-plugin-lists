@@ -1,0 +1,21 @@
+
+// ............................................
+// Intro:
+
+.for(@i, 4) {
+    .column-@{i} {
+        width: @i * 100% / 4;
+    }
+}
+
+// ............................................
+// Rainbow gradient:
+
+div {
+    background+:  ~'linear-gradient(';
+    background+_: to right;
+    .for(@i: 0, @n: 6) {
+        background+: spin(#e63, @i * 360 / (@n + 1));
+    }
+    background+_: ~')';
+}

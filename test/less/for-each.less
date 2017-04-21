@@ -50,6 +50,22 @@
     }
 }
 
+.for-each-guard {
+    @a: 1 2 3 4 5;
+    .for-each(@x in @a) when (@x = 2),  (@x = 4) {
+        a+_: @x;
+    }
+
+    @b: 1 a 2 b 3 c 4 d;
+    .for-each(@x in @b) when (iskeyword(@x)) {
+        b+_: @x;
+    }
+    
+    .for-each(@x in @b) when (isnumber(@x)) {
+        c+_: @x;
+    }
+}
+
 .for-each {
     me: is not a loop;
     .for-each {
