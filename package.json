@@ -1,6 +1,6 @@
 {
   "name": "less-plugin-lists",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "list/array manipulation for Less",
   "homepage": "https://github.com/seven-phases-max/less-plugin-lists",
   "author": "Max Mikhailov",
@@ -28,10 +28,13 @@
     "less.js",
     "lesscss",
     "less plugin",
+    "less for",
+    "less for-each",
     "less functions",
     "less list",
     "less array",
     "less key value",
-    "less map"
+    "less map",
+    "less loops"
   ]
 }
