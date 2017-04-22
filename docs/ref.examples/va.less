@@ -13,3 +13,12 @@ va {
     d: l(1 2 3) * 42;
     e: l(1, 2, 3) * 42;
 }
+
+// ............................................
+// Inverting color list values
+
+div {
+    @colors: blue, yellow, pink;
+    color: @colors;
+    background-color: white - @colors;
+}

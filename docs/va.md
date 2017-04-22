@@ -33,5 +33,22 @@ d: l(1 2 3) * 42;   // OK
 e: l(1, 2, 3) * 42; // OK
 ```
 
+### Example: inverting color list values
+Less code:
+```less
+div {
+    @colors: blue, yellow, pink;
+    color: @colors;
+    background-color: white - @colors;
+}
+```
+CSS output:
+```css
+div {
+    color: blue, yellow, pink;
+    background-color: #ffff00, #0000ff, #003f34;
+}
+```
+
 ---
 For more examples see included [tests](../test/less/va.less).
