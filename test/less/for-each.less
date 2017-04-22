@@ -14,9 +14,15 @@
     }
 }
 
+#for-each-inline-list {
+    .for-each(@x in @inline-list: a b c) {
+        r: @x of @inline-list;
+    }
+}
+
 #for-each-nested {
     .for-each(@x in @2d-list) {
-        .for-each(@y in @x) { 
+        .for-each(@y in @x) {
             r: @y of _inspect(@x);
         }
     }

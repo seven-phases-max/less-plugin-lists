@@ -14,6 +14,11 @@
   5: carrot;
   6: peach;
 }
+#for-each-inline-list {
+  r: a of a b c;
+  r: b of a b c;
+  r: c of a b c;
+}
 #for-each-nested {
   r: a of [a b c];
   r: b of [a b c];
