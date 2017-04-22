@@ -1,4 +1,9 @@
 
+# 1.1.1
+
+2017-22-04
+ - Fix `.for-each` inline list definition is not visible in the iteration body
+ 
 # 1.1.0
 
 2017-22-04
