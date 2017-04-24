@@ -3,8 +3,8 @@
 
 >Repeat a block of statements for a specified number of times.
 
-### Example
-Less code:
+
+Usage:
 ```less
 .for(@i, 4) {
     .column-@{i} {
@@ -12,7 +12,7 @@ Less code:
     }
 }
 ```
-CSS output:
+CSS result:
 ```css
 .column-1 {
     width: 25%;
@@ -27,6 +27,7 @@ CSS output:
     width: 100%;
 }
 ```
+
 
 ## Syntax
 ```less
@@ -49,8 +50,9 @@ CSS output:
     If `end` value is a complex expression or a variable (defined elsewhere), `@end` variable name is also required.
     </dd></dl>
 
+
 ## Examples
-    
+
 ### Typical syntax snippets
 ```less
 .for(@i, 4)          {} // loop from 1 to 4
@@ -82,6 +84,9 @@ div {
 }
 ```
 
-### More examples
 
-See [included tests](../test/less/for.less).
+## Advanced details and more examples
+See [Advanced Details and Usage](for-adv.md)
+
+## Yet more examples
+See [included tests](../test/less/for.less)

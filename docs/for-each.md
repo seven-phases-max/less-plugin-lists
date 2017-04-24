@@ -3,8 +3,7 @@
 
 >Repeat a block of statements for each element in the list.
 
-### Example
-Less code:
+Usage:
 ```less
 @fruit: banana, apple, pear, potato, carrot, peach;
 
@@ -14,7 +13,7 @@ Less code:
     }
 }
 ```
-CSS output:
+CSS result:
 ```css
 #fruit {
     some: banana;
@@ -25,6 +24,7 @@ CSS output:
     some: peach;
 }
 ```
+
 
 ## Syntax
 ```less
@@ -47,12 +47,13 @@ CSS output:
     Optional. A value to assign to the `@list` variable.
     </dd></dl>
 
+
 ## Examples
-    
+
 ### Generate classes from color map
 Less code:
 ```less
-@badge-colors: 
+@badge-colors:
     blue  #44BBFF,
     gray  #F0F1F5,
     green #66CC99,
@@ -105,7 +106,7 @@ CSS output:
     background-image: url("../images/book.svg");
 }
 ```
-    
+
 ### Nested loops
 Less code:
 ```less
@@ -129,6 +130,48 @@ div {
 }
 ```
 
-### More examples
+### Generate a list of selectors
+Less code:
+```less
+@devices: xs, sm, md, lg;
+@n-columns: 3;
 
-See [included tests](../test/less/for-each.less).
+.for-each(@name in @devices) {
+    .for(@i, @n-columns) {
+        .col-@{name}-@{i}:extend(.grid-column-any) {}
+    }
+}
+
+.grid-column-any {
+    // common styles for all grid columns:
+    position:   relative;
+    min-height: 1px;
+    padding:    0 15px;
+}
+```
+CSS output:
+```css
+.grid-column-any,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3 {
+    position: relative;
+    min-height: 1px;
+    padding: 0 15px;
+}
+```
+
+## Advanced details and more examples
+See [Advanced Details and Usage](for-adv.md)
+
+## Yet more examples
+See [included tests](../test/less/for-each.less)
