@@ -25,7 +25,7 @@ On the other hand, a regular CSS rulesets named this way won't cause any conflic
 }
 
 .for-each {
-    me: is not a loop too;
+    me: is not a loop either;
 }
 ```
 Both will compile just fine.
