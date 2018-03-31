@@ -6,6 +6,7 @@
 - [`flatten  `](#flatten)   - returns a one-dimensional list containing all elements of an input list.
 - [`join     `](#join)      - joins all elements of a list into a string.
 - [`l        `](#l)         - creates a comma-separated list.
+- [`reverse  `](#reverse)   - returns list in reversed order.
 - [`slice    `](#slice)     - returns selected portion of a list.
 - [`splice   `](#splice)    - replaces or removes selected portion of a list.
 - [`transpose`](#transpose) - transposes rows and columns of a list.
