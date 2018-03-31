@@ -202,6 +202,38 @@ at(l(a, b, c), 2); // b
 
 ---------------------------------------------------------------
 
+### `reverse`
+
+   Returns list in reversed order.
+
+**Syntax**
+```
+reverse(list)
+```
+
+**Parameters** <dl></dl>
+`list` <dl><dd>
+    Required. The input list.
+    </dd></dl>
+
+**Returns**
+
+   List in reversed order: from last to first.
+
+**Example**
+```less
+@list: one, two, three, four;
+
+reverse(@list);     // four, three, two, one
+
+
+@list: black white, one two;
+
+reverse(@list);     // one two, black white
+```
+
+---------------------------------------------------------------
+
 ### `slice`
 
    Returns selected portion of a list.

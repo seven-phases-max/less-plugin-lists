@@ -22,6 +22,7 @@ The plugin extends Less with the following functions:
 - [`flatten  `](docs/ref.md#flatten)   - returns a one-dimensional list containing all elements of an input list.
 - [`join     `](docs/ref.md#join)      - joins all elements of a list into a string.
 - [`l        `](docs/ref.md#l)         - creates a comma or space separated list.
+- [`reverse  `](docs/ref.md#reverse)   - returns list in reversed order.
 - [`slice    `](docs/ref.md#slice)     - returns selected portion of a list.
 - [`splice   `](docs/ref.md#splice)    - replaces or removes selected portion of a list and returns the modified copy.
 - [`transpose`](docs/ref.md#transpose) - transposes rows and columns of a list.
